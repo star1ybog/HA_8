@@ -25,5 +25,10 @@ test_c_list.o: test_c_list.c c_list.h
 c_list.o: c_list.c c_list.h
 	$(CC) $(CFLAGS) -c c_list.c
 
+task_8_1.exe: task_8_1.o
+	gcc -o task_8_1.exe task_8_1.o
+ task_8_1.o: task_8_1.c
+	gcc -Wall -Wextra -pedantic -std=c11 -c task_8_1.c
+
 clean:
 	del /f /q *.o *.exe
