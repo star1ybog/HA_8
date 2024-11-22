@@ -1,7 +1,7 @@
 #include "c_list.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h> // For strcpy in string management
+#include <string.h>
 
 c_list* create_list(size_t initial_capacity) {
     c_list* list = (c_list*)malloc(sizeof(c_list));
